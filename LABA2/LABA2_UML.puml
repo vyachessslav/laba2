@@ -1,0 +1,97 @@
+@startuml
+class com.company.pokemons.Crobat {
++ <<Create>> Crobat(String,int)
+}
+class com.company.moves.Stone_Edge {
++ <<Create>> Stone_Edge()
+# double calcCriticalHit(Pokemon,Pokemon)
+# String describe()
+}
+class com.company.moves.Boomburst {
++ <<Create>> Boomburst()
+# String describe()
+}
+class com.company.moves.Shadow_Ball {
++ <<Create>> Shadow_Ball()
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class com.company.pokemons.Arcanine {
++ <<Create>> Arcanine(String,int)
+}
+class com.company.moves.Facade {
++ <<Create>> Facade()
+# double calcBaseDamage(Pokemon,Pokemon)
+# String describe()
+}
+class com.company.moves.Confide {
++ <<Create>> Confide()
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class com.company.moves.Rock_Slide {
++ <<Create>> Rock_Slide()
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class com.company.moves.Dragon_Rush {
++ <<Create>> Dragon_Rush()
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class com.company.moves.Focus_Blast {
++ <<Create>> Focus_Blast()
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class com.company.pokemons.Girafarig {
++ <<Create>> Girafarig(String,int)
+}
+class com.company.pokemons.Shiftry {
++ <<Create>> Shiftry(String,int)
+}
+class com.company.moves.Mud_Slap {
++ <<Create>> Mud_Slap()
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class com.company.moves.Constrict {
++ <<Create>> Constrict()
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class com.company.pokemons.Ledyba {
++ <<Create>> Ledyba(String,int)
+}
+class com.company.moves.Dream_Eater {
++ <<Create>> Dream_Eater()
+# double calcBaseDamage(Pokemon,Pokemon)
+# void applySelfEffects(Pokemon)
+# String describe()
+}
+class com.company.pokemons.Wobbuffet {
++ <<Create>> Wobbuffet(String,int)
+}
+class com.company.Main {
++ {static} void main(String[])
+}
+
+
+com.company.pokemons.Pokemon <|-- com.company.pokemons.Crobat
+com.company.moves.PhysicalMove <|-- com.company.moves.Stone_Edge
+com.company.moves.SpecialMove <|-- com.company.moves.Boomburst
+com.company.moves.SpecialMove <|-- com.company.moves.Shadow_Ball
+com.company.pokemons.Pokemon <|-- com.company.pokemons.Arcanine
+com.company.moves.PhysicalMove <|-- com.company.moves.Facade
+com.company.moves.StatusMove <|-- com.company.moves.Confide
+com.company.moves.PhysicalMove <|-- com.company.moves.Rock_Slide
+com.company.moves.PhysicalMove <|-- com.company.moves.Dragon_Rush
+com.company.moves.SpecialMove <|-- com.company.moves.Focus_Blast
+com.company.pokemons.Pokemon <|-- com.company.pokemons.Girafarig
+com.company.pokemons.Pokemon <|-- com.company.pokemons.Shiftry
+com.company.moves.PhysicalMove <|-- com.company.moves.Mud_Slap
+com.company.moves.PhysicalMove <|-- com.company.moves.Constrict
+com.company.pokemons.Pokemon <|-- com.company.pokemons.Ledyba
+com.company.moves.SpecialMove <|-- com.company.moves.Dream_Eater
+com.company.pokemons.Pokemon <|-- com.company.pokemons.Wobbuffet
+@enduml
